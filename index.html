@@ -1,0 +1,29 @@
+
+<!doctype html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container"></div>
+  <script>
+//create 64 divs
+    const container = document.querySelector('.container');
+    function createDiv(i){
+        const square = document.createElement('div');
+        square.classList.add("square");
+        square.setAttribute('id', '' + i)
+        square.style.color = "black";
+
+        container.appendChild(square);
+    }
+    for (let i = 0; i < 256 ; i++){
+        createDiv(i);
+    }
+  
+    
+  </script>
+</body>
+</html>
